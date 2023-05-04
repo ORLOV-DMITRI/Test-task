@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  -moz-user-select: none;
+  user-select: none;
+}
+img {
+  pointer-events: none;
+}
+body {
+  background-color: rgb(99, 99, 118);
+}
+
+.container {
+  min-width: 1200px;
+  height: 100vh;
+  padding: 0 25px;
+  /* margin: 0 auto; */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.slider-block {
+  padding: 0 30px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.slider-list {
+  width: 500px;
+  height: 300px;
+  /* border: 10px solid blue; */
+  display: flex;
+  overflow: hidden;
+  /* box-shadow: 50px 10px 200px black; */
+}
+.text {
+  pointer-events: none;
+}
+.slide-single {
+  width: 500px;
+  height: 300px;
+  /* padding-right: 40px; */
+  /* padding-left: 12px; */
+  object-fit: contain;
+  /* border: 1px solid red; */
+  position: absolute;
+  background: white;
+}
+.slider {
+  padding: 25px;
+  display: flex;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.slider-track {
+  width: 6000px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  transition: 0.4s ease;
+}
+
+.icon:hover {
+  fill: white;
+  transform: scale(1.2);
+}
+.icon:active{
+  transform: scale(1);
+  fill: black;
+}
+.input-block {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dots-check {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  display: flex;
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+.btn-check {
+  border: 2px solid rgb(5, 3, 3);
+  background-color: rgb(174, 22, 22);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}   
+.btn-check:hover {
+  filter: brightness(150%);
+  background-color: rgb(119, 9, 114);
+  opacity: 0.7;
+}
+.btn-check:active {
+  transform: scale(0.9);
+}
+.dot-activ {
+  border: 2px solid rgb(156, 17, 17);
+  background-color: rgb(0, 0, 0);
+}
+.dots-event-non {
+  pointer-events: none;
+}
+.user-setting {
+  display: flex;
+}
+.speed-block {
+  display: flex;
+}
